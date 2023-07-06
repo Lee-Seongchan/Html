@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>7.배치실습</title>
+</head>
+<body>
+    <h3>7.배치실습</h3>
+
+    <article>
+        <style>
+            .box1{
+                width: 300px;
+                height: 300px;
+                border: 1px dashed black;
+                
+                position: relative;
+            }
+
+            .box1 > div {
+
+                width: 200px;
+                height: 200px;
+                background-color: green;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+            }
+
+        </style>
+        <h4>1. 다음과 같이 배치 하시오</h4>
+        <div class="box1">
+            <div></div>
+        </div>
+    </article>
+        
+    <article>
+
+        <style>
+            .box2{
+                width: 300px;
+                height: 300px;
+                border: 1px dashed black;
+                position: relative;
+                
+            }
+
+            .box2 > div{
+                width: 200px;
+                height: 200px;
+                background-color: green;
+                position: absolute; right: 0px; bottom: 0px;
+                
+            }
+        </style>
+
+        <h4>2. 다음과 같이 배치 하시오</h4>
+        <div class="box2">
+          <div></div>
+        </div>
+    </article>
+
+    <article>
+        <style>
+            .box3{
+                width: 300px;
+                height: 300px;
+                border: 1px dashed black;
+                position: relative;
+                
+            }
+
+            .box3 > div{
+                width: 200px;
+                height: 200px;
+                background-color: green;
+                position: absolute; right: 0px; top: 0px;
+                
+            }
+
+            .box3 > div > div{
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+                position: absolute; right: 0px; top: 50%;
+                
+            }
+        </style>
+        <h4>3. 다음과 같이 배치 하시오</h4>
+        <div class="box3">
+            <div>
+                <div></div>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <style>
+             .box4{
+                width: 300px;
+                height: 300px;
+                border: 1px dashed black;
+                position: relative;
+                
+            }
+
+            .box4 > div{
+                width: 200px;
+                height: 200px;
+                background-color: green;
+                position: absolute; left: 0px; bottom: 0px;
+                
+            }
+
+            .box4 > div > div{
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+                position: absolute; left: 0px; bottom: 0px;
+                
+            }
+        </style>
+        <h4>4. 다음과 같이 배치 하시오</h4>
+        <div class="box4">
+            <div>
+                <div></div>
+            </div>
+        </div>
+    </article>
+    <article>
+        <style>
+            .box5{
+                width: 300px;
+                height: 300px;
+                border: 1px dashed black;
+                position: relative;
+                
+            }
+
+            .box5 > div{
+                width: 200px;
+                height: 200px;
+                background-color: green;
+                position: absolute; top: 0px; left: 50px;
+                
+            }
+
+            .box5 > div > div{
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+                position: absolute; left: 50px; top : 50px;
+                
+            }
+        </style>
+        <h4>5. 다음과 같이 배치 하시오</h4>
+        <div class="box5">
+            <div>
+                <div></div>
+            </div>
+        </div>
+    </article>
+    <article>
+        <style>
+            .box6{
+                width: 300px;
+                height: 300px;
+                border: 1px dashed black;
+                position: relative;
+                
+            }
+
+            .box6 > div{
+                width: 200px;
+                height: 200px;
+                background-color: green;
+                position: absolute; top: 50px; left: 50px;
+                
+            }
+
+            .box6 > div > div{
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+                position: absolute; left: 50px; top : 50px;
+                
+            }
+        </style>
+        <h4>6. 다음과 같이 배치 하시오</h4>
+        <div class="box6">
+            <div>
+                <div></div>
+            </div>
+        </div>
+    </article>
+    <article>
+        <style>
+            .box7{
+                width: 300px;
+                height: 300px;
+                border: 1px dashed black;
+                position: relative;
+                
+            }
+
+            .box7 > div:nth-child(1){
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                position: absolute; top: 0; right: 100px;
+                
+            }
+            .box7 > div:nth-child(2){
+                width: 100px;
+                height: 100px;
+                background-color: green;
+                position: absolute; left: 0; top: 100px;
+                
+            }
+            .box7 > div:nth-child(3){
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+                position: absolute; right: 0; top: 100px;
+                
+            }
+            .box7 > div:nth-child(4){
+                width: 100px;
+                height: 100px;
+                background-color: orange;
+                position: absolute; bottom: 0; right: 100px;
+                
+            }
+           
+        </style>
+        <h4>7. 다음과 같이 배치 하시오</h4>
+        <div class="box7">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </article>
+
+    <article>
+        <style>
+             .box8{
+                width: 300px;
+                height: 300px;
+                border: 1px dashed black;
+                position: relative;
+                
+            }
+
+            .box8 > div:nth-child(1){
+                width: 100px;
+                height: 100px;
+               
+                background-color: red;
+                position: absolute; top: 0; left: 0px;
+                
+            }
+            .box8 > div:nth-child(2){
+                width: 100px;
+                height: 100px;
+             
+                background-color: green;
+                float: right;
+                
+            }
+            .box8 > div:nth-child(3){
+                width: 100px;
+                height: 100px;
+                
+                background-color: orange;
+                position: absolute; right: 100px; top: 100px;
+                
+            }
+            .box8 > div:nth-child(4){
+                width: 100px;
+                height: 100px;
+             
+                background-color: pink;
+                position: absolute; bottom: 0px; right: left 0px;
+                
+            }
+            .box8 > div:nth-child(5){
+                width: 100px;
+                height: 100px;
+            
+                background-color: blue;
+                position: absolute; bottom: 0; right: 0px;
+                
+            }
+        </style>
+
+        <h4>8. 다음과 같이 배치 하시오</h4>
+        <div class="box8">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>    
+    </article>
+
+    <article>
+        <style>
+             .box9{
+                width: 300px;
+                height: 300px;
+                border: 1px dashed black;
+                position: relative;
+                
+            }
+
+            .box9 > div:nth-child(1){
+                width: 100px;
+                height: 100px;
+               
+                background-color: red;
+                float: left;
+                
+            }
+            .box9 > div:nth-child(2){
+                width: 100px;
+                height: 100px;
+             
+                background-color: green;
+                margin: 0 auto;
+                
+            }
+            .box9 > div:nth-child(3){
+                width: 100px;
+                height: 100px;
+                
+                background-color: orange;
+                clear: left;
+            }
+        </style>
+        <h4>9. 다음과 같이 배치 하시오</h4>
+        <div class="box9">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </article>
+    <article>
+        <style>
+            .box10{
+                width: 300px;
+                height: 300px;
+                border: 1px dashed black;
+                position: relative;
+                
+            }
+
+            .box10 > div:nth-child(1){
+                width: 100px;
+                height: 100px;
+               
+                background-color: red;
+                float: right;
+                
+            }
+            .box10 > div:nth-child(2){
+                width: 100px;
+                height: 100px;
+             
+                background-color: green;
+                margin: 0 auto;
+                
+            }
+            .box10 > div:nth-child(3){
+                width: 100px;
+                height: 100px;
+                
+                background-color: orange;
+                float: right;
+            }
+        </style>
+        <h4>10. 다음과 같이 배치 하시오</h4>
+        <div class="box10">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </article>
+    <article>
+        <style>
+            .box11{
+                width: 300px;
+                height: 300px;
+                border: 1px dashed black;
+                position: relative;
+                
+            }
+
+            .box11 > div:nth-child(1){
+                width: 100px;
+                height: 100px;
+               
+                background-color: red;
+                float: left;
+                
+            }
+            .box11 > div:nth-child(2){
+                width: 100px;
+                height: 100px;
+             
+                background-color: green;
+                float: right;
+                
+            }
+            .box11 > div:nth-child(3){
+                width: 100px;
+                height: 100px;
+                float: right;
+                background-color: orange;
+                
+            }
+            .box11 > div:nth-child(4){
+                width: 100px;
+                height: 100px;
+                float: left;
+                clear: both;
+                background-color: blue;
+                
+                
+            }
+            .box11 > div:nth-child(5){
+                width: 100px;
+                height: 100px;
+                float: left;
+                background-color: pink;
+               
+                
+            }
+            .box11 > div:nth-child(6){
+                width: 100px;
+                height: 100px;
+                clear:both;
+                background-color: red;
+               
+                
+            }
+        </style>
+        <h4>11. 다음과 같이 배치 하시오</h4>
+        <div class="box11">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </article>
+
+    <article>
+        <style>
+                .box12{
+                width: 300px;
+                height: auto;
+                border: 1px dashed black;
+                position: relative;
+                overflow: hidden;
+                
+            }
+
+            .box12 > div:nth-child(1){
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                float: right;
+                
+            }
+            .box12 > div:nth-child(2){
+                width: 100px;
+                height: 100px;
+                background-color: green;
+                float: right;
+                clear: right;
+                
+            }
+            .box12 > div:nth-child(3){
+                width: 100px;
+                height: 100px;
+                background-color: orange;
+                float: right;
+                
+            }
+            .box12 > div:nth-child(4){
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+                float: right;
+                clear: both;
+               
+                
+                
+            }
+            .box12 > div:nth-child(5){
+                width: 100px;
+                height: 100px;
+                background-color: pink;
+                float: right;
+                
+            }
+            .box12 > div:nth-child(6){
+                width: 100px;
+                height: 100px;
+                background-color: blueviolet;
+                float: right;
+             
+            }
+        </style>
+        <h4>12. 다음과 같이 배치 하시오</h4>
+        <div class="box12">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </article>
+   
+    </body>
+</html>
