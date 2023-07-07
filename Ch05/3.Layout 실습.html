@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>3.Layout 실습</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #container{
+            width: 800px;
+            height: auto;
+            margin: 0 auto;
+            background: #aaa;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        header{
+            width: auto;
+            height: 120px;
+            background-color: #ccc;
+        }
+
+        main {
+            width: 100%;
+            height: auto;
+            padding: 10px;
+            background-color: #ccc;
+            margin: 10px 0;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        main > aside{
+            float: left;
+            height: 400px;
+            width: 220px;
+            background-color: #eee;
+            margin-right: 10px;
+            
+        }
+
+        main > section{
+            height: 400px;
+            width: 530px;
+            background-color: #eee;
+            float: left;
+        
+        }
+
+        footer{
+            height: 100px;
+            width: 100%;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="container">
+        <header>
+            <h3>header</h3>
+        </header>
+
+        <main>
+            <h3>Main</h3>
+            <aside>
+                <h3>aside</h3>
+            </aside>
+            <section>
+                <h3>section</h3>
+            </section>
+        </main>
+
+        <footer>
+            <h3>footer</h3>
+        </footer>
+    </div>
+</body>
+</html>
