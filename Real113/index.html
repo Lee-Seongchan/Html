@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+        font-family: "고딕";
+    }
+
+    ul, ol{list-style: none;}
+    a {text-decoration: none; color: #111;}
+    input, textarea{outline: none;}
+
+    #container{
+        width: 100%;
+        height: auto;
+       
+    }
+
+    header{
+        width: 100%;
+        height: 80px;
+        border: 1px solid blue;
+        box-sizing: border-box;
+        background: url(images/header_bg.gif);
+        position: relative;
+        
+    }
+
+
+    header > div{
+        width: 1000px;
+        height: 100%;
+        border: 1px solid green;
+        margin: 0 auto;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    header .logo{
+        margin-top: 6px;
+    }
+
+    .nav1{
+        float: right;
+        
+        height: 32px;
+        margin-top: 14px;
+     
+    }
+
+    .nav1 > li{
+        float: left;
+        width: 20%;
+        height: 100%;
+        box-sizing: border-box;
+        
+    }
+
+    .nav1 > a{
+        text-align: right;
+        line-height: 32px;
+        font-size: 17px;
+        font-weight: bolder;
+        word-spacing: 5px;
+        margin-left: 50px ;
+        
+    }
+    .nav1 > a:hover{
+        color: #7b231f;
+    }
+
+
+ 
+    header .latest{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 50%;
+        height: 30px;
+        box-sizing: border-box;
+    }
+
+   
+
+    header .latest > a{display: inline-block; color: #555;}
+    header .latest > a:nth-child(1){position: relative; top: 6px;}
+    header .latest > a:nth-child(2){position: relative; top: -1px; left: 3px; font-size: 12px; font-family: "고딕";}
+    
+    header .latest > a:nth-child(2):hover{
+        text-decoration: underline;
+    }
+
+ 
+    
+    
+    main{
+        width: 1000px;
+        height: auto;
+        margin: 5px auto;       
+    }
+
+    main > div > div {
+        border: 1px solid #d7d7d7;
+        box-sizing: border-box;
+    }
+
+   
+
+    main > div > 
+
+    main > section > div{
+        box-sizing: border-box;
+    }
+
+    #section1 {
+        box-sizing: border-box;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .box1{
+        width: 670px;
+        height: 320px;
+        float: left;
+        border: 1px solid green;
+        box-sizing: border-box;
+        background: url(images/main_banner_bg.jpg) no-repeat;
+        overflow: hidden;
+    }
+
+    .box1 > img{
+        margin-top: 100px;
+        margin-left: 160px;
+    }
+
+
+  
+    .chart {
+        display: block;
+        float: right;
+        margin-top: -225px;
+        
+    }
+
+
+    .chart > li > a{
+        display: block;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        font-size: bold;
+        font-size: 14px;
+        border: 1px solid green;
+    }
+
+    .box2 {
+        position: relative;
+        float: right;
+        width: 326px;
+        height: 133px;
+        background-color: #f2f2f2;
+    }
+
+    .box2 > img{
+        position: absolute;
+    }
+
+
+    .box2 > img:nth-child(1) {
+        left: 20px; top: 20px;
+    }
+
+    .box2 > img:nth-child(2) {
+        left: 20px; top: 46px; z-index: 10;
+    }
+   .box2 > img:nth-child(3) {
+        left: 20px; bottom: 20px; z-index: 10;
+    }
+    .box2 > img:nth-child(4){
+        right: 0px; top: 0px; z-index: 0;
+    }
+
+   
+
+     
+
+    .box2{
+        width: 326px;
+        height: 133px;
+        float: right;
+        border: 1px solid green;
+        box-sizing: border-box;
+        
+    }
+
+    .box3{
+        border: 1px solid green;
+        width: 326px;
+        height: 182px;
+        float: right;
+        margin-top: 5px;
+        box-sizing: border-box;
+    }
+
+    .box3{
+        float: right;
+        width: 326px;
+        height: 182px;
+        margin-top: 5px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .box3 h3{
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .box3 > table{
+        width: 100%;
+        height: auto;
+        margin-top: 6px;
+    }
+
+   
+    .box3 > table td:nth-child(2){
+        text-overflow: ellipsis;
+        display: inline-block;
+        width: 219px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+ 
+
+    article{
+        width: 195px;
+        height: 760px;
+        border: 1px solid green;
+        box-sizing: border-box;
+        float: left;
+        margin-top: 5px;
+    }
+
+    #section2{
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    #section2 > div{
+        width: 800px;
+        height: 250px;
+        border: 1px solid green;
+        float: right;
+        box-sizing: border-box;
+        margin-top: 5px;
+    }
+    
+    footer{
+        width: 1000px;
+        height: 130px;
+        border: 1px solid blue;
+        box-sizing: border-box;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+   
+
+
+
+    
+    
+</style>
+
+</head>
+
+<body>
+        <div id="container">
+            <header>
+                <div>
+                    <a href="">
+                        <img src="images/header_logo.jpg" alt="로고" class="logo">
+                     </a>
+                    <ul class="nav1">
+                        <a href="#">회사소개</a>
+                        <a href="#">매물정보</a>
+                        <a href="#">매도위뢰</a>
+                        <a href="#">매입의뢰</a>
+                        <a href="#">질문답변</a>
+                    </ul>
+                    
+                    <div class="latest">
+                        <a href="#">
+                            <img src="images/header_txt_latest.gif" alt="최신매물정보">
+                        </a>
+                        <a href="#">
+                            [아파트]삼성동 전세 (방:3/욕실2) / 157m /매매가 21,100
+                        </a>
+                    </div>
+                </div>
+
+            </header>
+
+            <main>
+                <section id="section1">
+                    <div class = "box1">
+                        <img src="images/main_banner_txt.png" alt="전국 매물 보유량 최다">
+                        <ul>
+                            <div class = "chart">
+                                <img src="images/main_banner_local.jpg" alt="">
+                                <li> <a href="#">서울시</a></li>
+                                <li> <a href="#">경기도</a></li>
+                                <li> <a href="#">대전시</a></li>
+                                <li> <a href="#">부산시</a></li>
+                                <li> <a href="#">광주시</a></li> 
+                            </div>                   
+                        </ul>
+                    </div>
+                    <div class = "box2">
+                        <img src="images/main_call_tit.png" alt="">
+                        <img src="images/main_call_txt.png" alt="">
+                        <img src="images/main_call_num.png" alt="">
+                        <img src="images/main_call_phone.png" alt="">
+                    </div>
+                    <div class = "box3">
+                        <h3>질문과 답변</h3>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="images/ico_latest.gif" alt="">
+                                </td>
+                                <td>
+                                    <a href="#">테스트입니다</a>
+                                </td>
+                                <td>20-05-13</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <img src="images/ico_latest.gif" alt="">
+                                </td>
+                                <td>
+                                    <a href="#">[문의] 분양상품 중 문의 드립니다. 빠른 답변 부탁드립니다.</a>
+                                </td>
+                                <td>
+                                    20-05-13
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/ico_latest.gif" alt="">
+                                </td>
+                                <td>
+                                    <a href="#">[문의] 분양상품 중 문의 드립니다. 빠른 답변 부탁드립니다.</a>
+                                </td>
+                                <td>
+                                    20-05-13
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    <img src="images/ico_latest.gif" alt="">
+                                </td>
+                                <td>
+                                    <a href="#">[문의] 분양상품 중 문의 드립니다. 빠른 답변 부탁드립니다.</a>
+                                </td>
+                                <td>
+                                    20-05-13
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <img src="images/ico_latest.gif" alt="">
+                                </td>
+                                <td>
+                                    <a href="#">[문의] 분양상품 중 문의 드립니다. 빠른 답변 부탁드립니다.</a>
+                                </td>
+                                <td>
+                                    20-05-13
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <img src="images/ico_latest.gif" alt="">
+                                </td>
+                                <td>
+                                    <a href="#">[문의] 분양상품 중 문의 드립니다. 빠른 답변 부탁드립니다.</a>
+                                </td>
+                                <td>
+                                    20-05-13
+                                </td>
+                            </tr>
+
+                           
+                        </table>
+                    </div>
+                </section>
+
+                <section id="section2">
+                    <article></article>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </section>
+
+            </main>
+            
+            <footer>
+
+
+
+            </footer>
+        </div>
+</body>
+</html>

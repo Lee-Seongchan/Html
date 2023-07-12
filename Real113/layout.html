@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    #container{
+        width: 100%;
+        height: auto;
+       
+    }
+
+    header{
+        width: 100%;
+        height: 80px;
+        border: 1px solid blue;
+        box-sizing: border-box;
+    }
+
+    header > div{
+        width: 1000px;
+        height: 100%;
+        border: 1px solid green;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    main{
+        width: 1000px;
+        height: auto;
+        margin: 5px auto;       
+    }
+
+    main > section > div{
+        box-sizing: border-box;
+    }
+
+    #section1 {
+        box-sizing: border-box;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .box1{
+        width: 670px;
+        height: 320px;
+        float: left;
+        border: 1px solid green;
+        box-sizing: border-box;
+    }
+
+    .box2{
+        width: 326px;
+        height: 133px;
+        float: right;
+        border: 1px solid green;
+        box-sizing: border-box;
+        
+    }
+
+    .box3{
+        border: 1px solid green;
+        width: 326px;
+        height: 182px;
+        float: right;
+        margin-top: 5px;
+        box-sizing: border-box;
+       
+    }
+
+    article{
+        width: 195px;
+        height: 760px;
+        border: 1px solid green;
+        box-sizing: border-box;
+        float: left;
+        margin-top: 5px;
+    }
+
+    #section2{
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    #section2 > div{
+        width: 800px;
+        height: 250px;
+        border: 1px solid green;
+        float: right;
+        box-sizing: border-box;
+        margin-top: 5px;
+    }
+    
+    footer{
+        width: 1000px;
+        height: 130px;
+        border: 1px solid blue;
+        box-sizing: border-box;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+   
+
+
+
+    
+    
+</style>
+
+</head>
+
+<body>
+        <div id="container">
+            <header>
+                <div></div>
+
+            </header>
+
+            <main>
+                <section id="section1">
+                    <div class = "box1"></div>
+                    <div class = "box2"></div>
+                    <div class = "box3"></div>
+                </section>
+
+                <section id="section2">
+                    <article></article>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </section>
+
+            </main>
+            
+            <footer>
+
+
+
+            </footer>
+        </div>
+</body>
+</html>
