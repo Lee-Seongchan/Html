@@ -255,14 +255,174 @@
         overflow: hidden;
     }
 
+    #art1 > div > h3{
+        font-size: 14px;
+        font-weight: bold;
+    }
+   
+ 
+
+    #notice{
+        width: 100%;
+        height: 204px;
+        padding: 10px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .art1_ad > li{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        line-height: 20px;
+    }
+
+    .art1_ad {
+       margin-top: 7px;
+    }
+
     #section2 > div{
         width: 800px;
         height: 250px;
-        border: 1px solid green;
+       
         float: right;
         box-sizing: border-box;
         margin-top: 5px;
     }
+
+
+    #art2{
+        width: 100%;
+        height: 204px;
+        padding: 10px;
+      
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    #art2 > h3{
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    #art2 a {
+        position: relative;
+        
+        display: block;
+        width: 175px;
+        height: 34px;
+        border: 1px solid #d9d9d9;
+        overflow: hidden;
+        margin-top: 6px;
+        box-sizing: border-box;
+        background-color: #f6f6f6;
+      
+    }
+
+    #art2 img{
+        text-align: center;
+        padding: 10px;
+        
+    }
+
+
+
+    #notice3 a{
+        display: block;
+        position: relative;
+        width: 195px;
+        height: 83px;
+        border: 1px solid #999;
+        box-sizing: border-box;
+    }
+
+    #notice3 img:nth-child(1){
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+
+    #notice3 img:nth-child(2){
+        float: right;
+    }
+
+    .art3{
+        width: 195px;
+        height: 167px;
+        box-sizing: border-box;
+        border: 1px solid #999;
+        margin-top: 6px;
+        left: -1px;
+        background-image: url(images/aside_banner_bg.jpg);
+        position: relative;
+    
+    }
+
+    .art3 > img:nth-child(1){
+        float: right;
+    }
+
+    .art3 > img:nth-child(2){
+        position: absolute;
+        top: 40px;
+        left: 20px;
+    }
+
+    .art3-1{
+        position: absolute;
+        top: 65px;
+        left: 18px;
+    }
+
+    .box4{
+        border: 1px solid green;
+        position: relative;
+      
+     
+        
+    }
+
+    .box4 > h3{
+        font-size: 14px;
+        margin-top: 7px;
+    }
+
+    .box4_Img{
+        border: 1px solid blue;
+        box-sizing: border-box;
+        text-align: center;
+        position: absolute;
+        margin-top: 30px
+   
+    }
+
+    .box4_Img > div{
+        
+        display: inline-flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+     
+    }
+
+    .box4_Img > div > a{
+        text-align: left;
+      
+    }
+
+    .box4_Img > div > img { 
+        width: 150px;
+        height: 100px;
+       
+    }
+
+    .box4_1{
+        width: 19%;
+        height: 100%;
+      
+        
+    }
+   
     
     footer{
         width: 1000px;
@@ -409,10 +569,153 @@
                 </section>
 
                 <section id="section2">
-                    <article></article>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <article id="art1">
+                        <div id="notice">
+                            <h3>공지사항</h3>
+                            <ul class="art1_ad">
+                                <li>
+                                    <a href="">
+                                        "전국 매물 보유량 최다! 계약 만족도 최상!."
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="">
+                                        "전국 매물 보유량 최다! 계약 만족도 최상!."
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="">
+                                        "전국 매물 보유량 최다! 계약 만족도 최상!."
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="">
+                                        "전국 매물 보유량 최다! 계약 만족도 최상!."
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="">
+                                        "전국 매물 보유량 최다! 계약 만족도 최상!."
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="">
+                                        "전국 매물 보유량 최다! 계약 만족도 최상!."
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="">
+                                        "전국 매물 보유량 최다! 계약 만족도 최상!."
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="">
+                                        "전국 매물 보유량 최다! 계약 만족도 최상!."
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                            
+                        <div id="art2">
+                            <h3>바로가기</h3>
+                            <a href="#"><img src="images/aside_quick_court.png" alt=""></a>
+                            <a href="#"><img src="images/aside_quick_google.png" alt=""></a>
+                            <a href="#"><img src="images/aside_quick_naver_map.png" alt=""></a>
+                            <a href="#"><img src="images/aside_quick_naver_subway.png" alt=""></a>
+                        </div>
+
+                        <div id="notice3">
+                            <a href="" class="sell">
+                                <img src="images/aside_sell_txt.png" alt="">
+                                <img src="images/aside_sell_house.jpg" alt="">
+                            </a>
+                            <a href="" class="buy">
+                                <img src="images/aside_buy_txt.png" alt="">
+                                <img src="images/aside_buy_house.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class = "art3">
+                            <img src="images/aside_banner_ad.png" alt="">
+                            <img src="images/aside_banner_txt.png" alt="">
+                            <a href="" class="art3-1">
+                                <img src="images/aside_banner_go.png" alt="">
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    <div class = "box4">
+                        <h3>서울시 매물 정보</h3>
+                        <a href="images/ico_more.png"></a>
+                        <div class="box4_Img">
+                            <div class="box4_1">
+                                <img src="images/thumbnail_sample1.jpg" alt="">
+                                <a href="#">[아파트]강변 신축 아파트 분양 (방:5/욕실2) / 189㎡/ 매매가 20,000 분양가 20,800</a>
+                            </div>
+                            
+                            <div class="box4_1">
+                                <img src="images/thumbnail_sample2.jpg" alt="">
+                                <a href="#">"[아파트] 삼성동 전세 (방:3/욕실2) / 152㎡"/ 매매가 21,1000</a>
+                            </div>
+                            <div class="box4_1">
+                                <img src="images/thumbnail_sample3.jpg" alt="">
+                                <a href="#">[빌라] 안국동 매매 (방:8/욕실3) / 309㎡ / 매매가 11,800</a>
+                            </div>
+                            <div class="box4_1">
+                                <img src="images/thumbnail_sample4.jpg" alt="">
+                                <a href="#">[복층빌라] 한남동 월세 (방:4/욕실2) / 157㎡ / 보증금 3,000 월세80</a>
+                            </div>
+                            <div class="box4_1">
+                                <img src="images/thumbnail_sample5.jpg" alt="">
+                                <a href="#">[아파트] 역삼동 급매 (방:3/욕실2) / 109㎡ / 매매가 11,800</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                   <!--  <div class = "box4">
+                        <h3>서울시 매물 정보</h3>
+                        <a href="images/ico_more.png"></a>
+                        <ul class="box4_Img">
+                            <li>
+                                <img src="images/thumbnail_sample1.jpg" alt="">
+                                <a href="#">[아파트]강변 신축 아파트 분양 (방:5/욕실2) / 189㎡/ 매매가 20,000 분양가 20,800</a>
+                            </li>
+                            
+                            <li>
+                                <img src="images/thumbnail_sample2.jpg" alt="">
+                                <a href="#">"[아파트] 삼성동 전세 (방:3/욕실2) / 152㎡"/ 매매가 21,1000</a>
+                            </li>
+                            <li>
+                                <img src="images/thumbnail_sample3.jpg" alt="">
+                                <a href="#">[빌라] 안국동 매매 (방:8/욕실3) / 309㎡ / 매매가 11,800</a>
+                            </li>
+                            <li>
+                                <img src="images/thumbnail_sample4.jpg" alt="">
+                                <a href="#">[복층빌라] 한남동 월세 (방:4/욕실2) / 157㎡ / 보증금 3,000 월세80</a>
+                            </li>
+                            <li>
+                                <img src="images/thumbnail_sample5.jpg" alt="">
+                                <a href="#">[아파트] 역삼동 급매 (방:3/욕실2) / 109㎡ / 매매가 11,800</a>
+                            </li>
+                        </ul>
+                    </div> -->
+                    
+                    
+                    
+
+
+
+                    <div class = "box5"></div>
+                    <div class = "box6"></div>
                 </section>
 
             </main>
