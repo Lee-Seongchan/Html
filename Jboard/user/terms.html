@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style >
+        /* 약관 */
+
+        .terms{
+            margin: 60px auto;
+            width: 600px;
+        }
+
+
+        .terms > table {
+            width: 100%;
+            border-top: 2px solid #111;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        
+
+        .terms > table > caption{
+            text-align: left;
+            font-weight: bold;
+            padding: 10px 0;
+        }
+
+        .terms > table  tr > td{
+            padding: 6px 10px;
+            border: 1px solid #e9e9e9;
+            box-sizing: border-box;
+        }
+
+        .terms > table  textarea{
+            width: 100%;
+            height: 200px;
+            resize: none;
+            border: 1px solid #e4eaec;
+            background: #f7f7f7;
+            color: #111;
+            padding: 2px;
+            box-sizing: border-box;
+        }
+
+        .ok_label{
+            float: right;
+            
+        }
+
+
+        .terms > div {
+           padding: 20px 0;
+           text-align: right;
+        }
+
+        .terms > div a:nth-child(1){
+            background-color: #fdfdfd;
+        }
+
+        .terms > div a:nth-child(2){
+            background-color: #e9e9e9;
+        }
+
+        .terms > div > a{
+            padding: 8px;
+            border: 1px solid #bebebe;
+            color: #111;
+        }
+
+        .terms > div > a.btnCancel{
+            background-color: #fdfdfd;
+        }
+
+        .terms > div > a.btnNext{
+            background-color: #e9e9e9;
+        }
+       
+
+        
+
+      
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h3>Board System v1.0</h3>
+        </header>
+
+        <main>
+
+            <section id="user" class="terms">
+                    <table>
+                        <caption>사이트 이용약관</caption>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <textarea readonly>약관내용</textarea>
+                                    <p>
+                                        <label class="ok_label">
+                                            <input type="checkbox" name="chk1" class="ok">
+                                            동의합니다.
+                                        </label>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>    
+
+                    <table>
+                        <caption>개인정보 취급방침</caption>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <textarea readonly>개인정보내용</textarea>
+                                    <p>
+                                        <label class="ok_label">
+                                            <input type="checkbox" name="chk2" class="ok">
+                                            동의합니다.
+                                        </label>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div>
+                        <a href="./login.html" class="btnCancel">취소</a>
+                        <a href="./login.html" class="btnNext">다음</a>
+                    </div>    
+            </section>
+
+          
+        </main>
+
+        <footer>
+            <p>ⓒcopyright 이성찬.com</p>
+        </footer>
+    </div>
+</body>
+</html>
