@@ -4,72 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>글목록</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <style >
-        .list{
-            width: 720px;
-            margin: 60px auto;
-            position: relative;
-        }
-
-       
-     
-        .list > article > table {
-            width: 100%;
-            border-top: 2px solid #111;
-            border-collapse: collapse;
-            border-spacing: 0;
-            margin-top: 6px;
-        }
-
-        #border_table th{
-            padding: 12px;
-            border-top: 1px solid #d1dee2;
-            background: #e5ecef;
-            color: #383838;
-        }
-
-        #border_table tr > td{
-            padding: 12px;
-            border-top: 1px solid #d1dee2;
-            border-bottom: 1px solid #d1dee2;
-            background: #fff;
-            color: #383838;
-        }
-
-        .list_tr_td > td:nth-child(1){width: 50px; text-align: center; }
-        .list_tr_td > td:nth-child(2){width: auto; text-align: left; }
-        .list_tr_td > td:nth-child(3){width: 100px; text-align: center; }
-        .list_tr_td > td:nth-child(4){width: 100px; text-align: center; }
-        .list_tr_td > td:nth-child(5){width: 50px; text-align: center; }
-       
-        .paging {
-            padding: 20px;
-            text-align: center;
-        }
-
-        .paging a{
-            padding: 8px;
-            background: #f2f2f2;
-            border: 1px solid #d7d7d7;
-        }
-
-        .paging > .current{
-            border: 1px solid #6d6d6d;
-            background: #888;
-            color: #fff;
-        }
-
-        .list > .btnWrite{
-            position: absolute;
-            bottom: 14px;
-            right: 0;
-            padding: 7px;
-            background-origin: 1px solid #3b3c3f;
-            background: #4b545e;
-            color: #fff;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/style.css">    
 </head>
 <body>
     <div id="container">
@@ -77,51 +12,46 @@
             <h3>Board System v1.0</h3>
             <p>
                 OOO님 반갑습니다.
-                <a href="#" class="logout">로그아웃</a>
+                <a href="#" class="logout">[로그아웃]</a>
             </p>
         </header>
-
         <main>
             <section class="list">
                 <h3>글목록</h3>
                 <article>
-                    <table border="0" id="border_table">
-                        <tbody>
-                            <tr>
-                                <th>번호</th>
-                                <th>제목</th>
-                                <th>글쓴이</th>
-                                <th>날짜</th>
-                                <th>조회</th>
-                            </tr>
-
-                            <tr class="list_tr_td">
-                                <td>1</td>
-                                <td>
-                                    <a href="./view.html">테스트 제목입니다.</a>
-                                </td>
-                                <td>길동이</td>
-                                <td>20-05-12</td>
-                                <td>12</td>
-                            </tr>
-                        </tbody>
+                    <table border="0">
+                        <tr>
+                            <th>번호</th>
+                            <th>제목</th>
+                            <th>글쓴이</th>
+                            <th>날짜</th>
+                            <th>조회</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="#">테스트 제목입니다.</a>&nbsp;[3]</td>
+                            <td>길동이</td>
+                            <td>20-05-12</td>
+                            <td>12</td>
+                        </tr>
                     </table>
                 </article>
-                <!--페이지 네비게이션-->
+
+                <!-- 페이지 네비게이션 -->
                 <div class="paging">
                     <a href="#" class="prev">이전</a>
-                    <a href="#" class="num current">1</a>
-                    <a href="#" class="num">2</a>
-                    <a href="#" class="num">3</a>
+                    <a href="#" class="num current">1</a>                
+                    <a href="#" class="num">2</a>                
+                    <a href="#" class="num">3</a>                
                     <a href="#" class="next">다음</a>
                 </div>
+
                 <!-- 글쓰기 버튼 -->
-                <a href="./write.html" class="btnWrite">글쓰기</a>
+                <a href="#" class="btnWrite">글쓰기</a>
             </section>
         </main>
-
         <footer>
-            <p>ⓒcopyright 이성찬.com</p>
+            <p>ⓒcopyright 김철학.com</p>
         </footer>
     </div>
 </body>
