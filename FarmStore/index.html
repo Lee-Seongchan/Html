@@ -6,18 +6,71 @@
     <title>팜스토리::메인</title>
     <link rel="stylesheet" href="./css/style.css">
     <style>
-      main > .info > div:not(1){
-        border: 1px solid blue;
+
+
+    main > .info {
+        height: 154px;
+        padding: 10px 0;
+        border-top: 2px solid #756c65;
+        box-sizing: border-box;
+    }
+
+    main > .info > div {
+        float: left;
+        height: 100%;
+    }
+
+    main > .info > div:nth-child(1){
         width: 386px;
     }
 
-    main > .info > div:not(2){
-        
+    main > .info {
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    main > .info > div > .tel > * {
+        float: left;
+        margin-right: 16px;
     }
 
-    main > .info > div:not(3){
-       
+    main > .info > div > .tel > .time {
+        line-height: 18px;
+        color: #666;
+        margin-bottom: 15px;
     }
+
+    main > .info > div > .tit {
+        margin-bottom: 16px;
+    }
+
+
+
+    main > .info > div:nth-child(2){
+        width: 230px;
+        padding-left: 16px;
+        border-left: 1px solid #d7d7d7;
+        border-right: 1px solid #d7d7d7;
+        box-sizing: border-box;
+    }
+
+    main > .info > div > .account {
+        line-height: 18px;
+        color: #666;
+    }
+
+    main > .info > div:nth-child(3){
+        width: 360px;
+        padding-left: 10px;
+        border: 1px solid blue;
+        box-sizing: border-box;
+    }
+
+
+
+
+
+ 
     </style>
 </head>
 <body>
@@ -162,14 +215,14 @@
             </div>
             <div class="info">
                 <div>
-                    <img src="./images/main_sub2_cs_bt1.png" alt="고객센터 안내">
+                    <img src="./images/main_sub2_cs_tit.png"  class="tit"  alt="고객센터 안내">
                     <div class="tel">
                         <img src="./images/main_sub2_cs_img.png" alt="">
                         <img src="./images/main_sub2_cs_txt.png" alt="1666-777">
                         <p class="time">
                             "평일 : AM 09:00 ~ PM 06:00"<br>
                             "점심 : PM 12:00 ~ PM 01:00"<br>
-                            " 토, 일요일, 공휴일 휴무 "
+                            "토, 일요일, 공휴일 휴무 "
                         </p>
                     </div>
                     <div class = "btns">
@@ -184,7 +237,18 @@
                         </a>
                     </div>
                 </div>
-                <div></div>
+
+                <div>
+                    <img src="./images/main_sub2_account_tit.png"  class="tit" alt="계좌안내">
+                    <p class="account">
+                        기업은행 123-456789-01-01-012<br>
+                        국민은행 01-1234-56789<br>
+                        우리은행 123-456789-01-01-012<br>
+                        하나은행 123-456789-01-01<br>
+                        예 금 주 (주)팜스토리
+                    </p>
+                </div>
+
                 <div></div>
             </div>
         </main>

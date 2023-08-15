@@ -322,7 +322,193 @@ main > .info {
 #sub > .croptalk > aside > .lnb > li:nth-child(3).on > a {background-image: url('../images/sub_cate3_lnb3_ov.png');}
 
 /* 이벤트 */
-#sub > .croptalk > aside > .lnb > li:nth-child(3).on > a {background-image: url('../images/sub_cate4_lnb1_ov.png');}
+#sub > .event > aside > .lnb > li:nth-child(1) > a {background-image: url('../images/sub_cate4_lnb1.png');}
+#sub > .event > aside > .lnb > li:nth-child(1) > a:hover {background-image: url('../images/sub_cate4_lnb1_ov.png');}
+#sub > .event > aside > .lnb > li:nth-child(1).on > a {background-image: url('../images/sub_cate4_lnb1_ov.png');}
+
+
+
+
 
 /* 커뮤니티 */
-#sub > .croptalk > aside > .lnb > li:nth-child(3).on > a {background-image: url('../images/sub_cate5_lnb1_ov.png');}
+#sub > .community > aside > .lnb > li:nth-child(1) > a {background-image: url('../images/sub_cate5_lnb1.png');}
+#sub > .community > aside > .lnb > li:nth-child(2) > a {background-image: url('../images/sub_cate5_lnb2.png');}
+#sub > .community > aside > .lnb > li:nth-child(3) > a {background-image: url('../images/sub_cate5_lnb3.png');}
+#sub > .community > aside > .lnb > li:nth-child(4) > a {background-image: url('../images/sub_cate5_lnb4.png');}
+#sub > .community > aside > .lnb > li:nth-child(5) > a {background-image: url('../images/sub_cate5_lnb5.png');}
+
+#sub > .community > aside > .lnb > li:nth-child(1) > a:hover {background-image: url('../images/sub_cate5_lnb1_ov.png');}
+#sub > .community > aside > .lnb > li:nth-child(2) > a:hover {background-image: url('../images/sub_cate5_lnb2_ov.png');}
+#sub > .community > aside > .lnb > li:nth-child(3) > a:hover {background-image: url('../images/sub_cate5_lnb3_ov.png');}
+#sub > .community > aside > .lnb > li:nth-child(4) > a:hover {background-image: url('../images/sub_cate5_lnb4_ov.png');}
+#sub > .community > aside > .lnb > li:nth-child(5) > a:hover {background-image: url('../images/sub_cate5_lnb5_ov.png');}
+
+#sub > .community > aside > .lnb > li:nth-child(1).on > a {background-image: url('../images/sub_cate5_lnb1_ov.png');}
+#sub > .community > aside > .lnb > li:nth-child(2).on > a {background-image: url('../images/sub_cate5_lnb2_ov.png');}
+#sub > .community > aside > .lnb > li:nth-child(3).on > a {background-image: url('../images/sub_cate5_lnb3_ov.png');}
+#sub > .community > aside > .lnb > li:nth-child(4).on > a {background-image: url('../images/sub_cate5_lnb4_ov.png');}
+#sub > .community > aside > .lnb > li:nth-child(5).on > a {background-image: url('../images/sub_cate5_lnb5_ov.png');}
+
+#sub > section > article > nav > p {
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    color: #8c8c8c;
+    padding-left: 20px;
+    box-sizing: border-box;
+    background-image: url(../images/sub_page_nav_ico.gif);
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+#sub > section > article > nav > p > em {
+    font-weight: bold;
+    color: #91BA15;
+}
+
+/* 장보기 */
+
+/* 장보기 view.html*/
+#sub > .market > aside > .lnb > li:nth-child(1) > a {background-image: url('../images/sub_cate2_lnb1.png');}
+#sub > .market > aside > .lnb > li:nth-child(1) > a:hover {background-image: url('../images/sub_cate2_lnb1_ov.png');}
+#sub > .market > aside > .lnb > li:nth-child(1).on > a {background-image: url('../images/sub_cate2_lnb1_ov.png');}
+
+#sub > .market > .view > h3 {
+    font-family: 고딕;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+#sub > .market > .view > .basic {
+    width: 100%;
+    height: 270px;
+    position: relative;
+}
+
+#sub > .market > .view > .basic > img {
+    float: left;
+}
+
+#sub > .market > .view > .basic > table {
+    float: right;
+    width: 60%;
+    height: 200px;
+    margin-left: 16px;
+    border-top: 2px solid #e7e7e7;
+    border-bottom: 2px solid #e7e7e7;
+}
+#sub > .market > .view > .basic >.btnOrder{
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+#sub > .market > .view > .exchange table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#sub > .market > .view > .exchange table td {
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+#sub > .market > .view > .exchange table td:nth-child(1) {border-left: none;}
+#sub > .market > .view > .exchange table td:nth-child(2) {border-right: none;}
+
+#sub > .market > .view > .exchange table ul > li {
+    margin-left: 12px;
+    list-style-type: disc;
+    line-height: 18px;
+}
+
+
+/* 장보기 - order.html*/
+#sub > .market > .view > .order > .shipping table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 2px solid #be0808;
+}
+
+#sub > .market > .view > .order > .shipping table td:nth-child(1) {
+    width: 120px;
+    background: #f7f7f7;
+}
+
+#sub > .market > .view > .order > .shipping table td {
+    padding: 10px;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+#sub >.market > .view > .order > .shipping input {
+    height: 18px;
+    border: 1px solid #d7d7d7;
+    outline: none;
+}
+
+#sub > .market > .view > .order> .shipping input[name=addr1] {
+    display: block;
+    width: 320px;
+    margin-top: 2px;
+}
+
+#sub > .market > .view > .order> .shipping input[name=addr2] {
+    display: block;
+    width: 320px;
+    margin-top: 2px;
+}
+
+#sub > .market > .view > .order > .shipping textarea {
+    width: 320px;
+    height: 60px;
+    border: 1px solid #d7d7d7;
+    resize: none;
+    outline: none;
+}
+
+#sub > .market > .view > .order > p {
+    margin: 16px 0;
+    text-align: center;
+}
+
+/* 장보기 list.html*/
+#sub > .market> .view > .list > table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 1px solid #111;
+    border-bottom: 1px solid #111;
+    margin-top: 10px;
+}
+
+#sub > .market> .view > .list > table tr > td:nth-child(1) {width: 10%;}
+#sub > .market> .view > .list > table tr > td:nth-child(2) {width: 10%;}
+#sub > .market> .view > .list > table tr > td:nth-child(3) {width: 20%;}
+#sub > .market> .view > .list > table tr > td:nth-child(4) {width: 10%;}
+
+#sub > .market> .view > .list > table tr > td {
+    padding: 10px;
+    box-sizing: border-box;
+    color: #777;
+}
+
+#sub > .market> .view  > .list > table tr > td > strong {
+    color: #111;
+    font-weight: bold;
+}
+
+#sub > .market> .view > .list > .paging {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#sub > .market> .view > .list > .paging > a {
+    color: #999;
+}
+
+#sub > .market> .view > .list > .paging > .on {
+    color: #111;
+    text-decoration: underline;
+}
+
