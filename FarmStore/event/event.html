@@ -4,6 +4,55 @@
     <meta charset="UTF-8">
     <title>팜스토리::이벤트</title>
     <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+       #sub > .event > .content > .list{
+            width: 740px;
+            height: auto;
+            margin: 15px auto;
+            
+       }
+
+       #sub > .event > .content > .list > table{
+            width: 100%;
+            height: 70px;
+            border-top: 2px solid ;
+            border-spacing: 0;
+            margin-top: 6px;
+       }
+
+        .list  tr > th {
+            border-top: 1px solid #111;
+            border-bottom: 1px solid #111;
+            background: #e5ecef;
+            color: #383838;
+        }
+        .list > tr > td {    
+            padding: 12px 6px;
+            border-top: 1px solid #e9e9e9;
+            border-bottom: 1px solid #e9e9e9;    
+        }
+
+
+
+        .list table tr > td:nth-child(1) {width: 10%; text-align: center; background: #fff; font-size: 12px;}
+        .list table tr > td:nth-child(2) > a {width: 10%; text-align: left; font-size: 12x;}
+        .list table tr > td:nth-child(3) {width: 20%; text-align: center; font-size: 12px;}
+        .list table tr > td:nth-child(4) {width: 10%; text-align: center; font-size: 12px;}
+        .list table tr > td:nth-child(5) {width: 10%; text-align: center; font-size: 12px;}
+
+        .find{
+            display: inline-block;
+            width: 100%;
+            height: 30px;
+            text-align: center;
+            margin-top: 30px;
+            background-color:#d8d8d8;
+            padding-top: 12px;
+        }
+
+        
+    </style>
 </head>
 <body>
     <div id="container">
@@ -47,9 +96,35 @@
                         </p>
                     </nav>
                     <!-- 컨텐츠 시작 -->
-                    <p>
-                        이벤트 페이지 입니다.
-                    </p>
+                    <div class="list">
+                        <table>
+                            <tr>
+                                <th>NO</th>
+                                <th>제목</th>
+                                <th>글쓴이</th>
+                                <th>날짜</th>
+                                <th>조회</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td><a href="#">팜스토리 건강한 쌀.</a></td>
+                                <td>최고관리자</td>
+                                <td>08-16</td>
+                                <td>12</td>
+                            </tr>
+                        </table>
+                        <div class="find">
+                            <form action="#">
+                                <select name="find" id="lang">
+                                    <option value="title">제목</option>
+                                    <option value="writer">작성자</option>
+                                </select>
+                                <input type="text" value="">
+                                <label><input type="radio" name = select value="or">or</label>
+                                <label><input type="radio" name = select value="and">and</label>
+                            </form>
+                        </div>
+                    </div>
                     <!-- 컨텐츠 끝 -->
                 </article>
 
